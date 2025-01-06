@@ -37,13 +37,13 @@ header {
 }
 
 header h1 {
-  font-size: 6em;
+  font-size: 4em;
   margin: 0;
   text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8);
 }
 
 header p {
-  font-size: 2em;
+  font-size: 1em;
   margin-top: 15px;
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
   font-style: italic;
@@ -63,7 +63,7 @@ header p {
 
 .navbar a {
   color: #fff;
-  font-size: 1.8em;
+  font-size: 1em;
   font-weight: bold;
   text-transform: uppercase;
   padding: 12px 25px;
@@ -89,20 +89,20 @@ header p {
 }
 
 .content h2 {
-  font-size: 4.5em;
+  font-size: 3.8em;
   margin-bottom: 20px;
   color: #444;
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
 }
 
 .content h3 {
-  font-size: 3.5em;
+  font-size: 2.8em;
   margin: 30px 0 20px;
   color: #555;
 }
 
 .content p {
-  font-size: 2em;
+  font-size: 1.2em;
   line-height: 1.8;
   margin-bottom: 20px;
   color: #666;
@@ -111,7 +111,7 @@ header p {
 .content ul {
   list-style: disc inside;
   padding: 0;
-  font-size: 1.8em;
+  font-size: 1em;
   text-align: left;
   margin: 20px auto;
   max-width: 700px;
@@ -128,7 +128,7 @@ footer {
   text-align: center;
   padding: 20px 0;
   margin-top: auto;
-  font-size: 1em;
+  font-size: 0.6em;
   position: relative;
   box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
 }
