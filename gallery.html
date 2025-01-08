@@ -3,7 +3,9 @@
 <head>
     <title>Gallery - Mysore Tourism</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
@@ -13,12 +15,12 @@
     <nav class="navbar">
         <a href="index.html" onclick="changeBackground('./images/home.jpg')">Home</a>
         <a href="about.html" onclick="changeBackground('./images/about.jpg')">About Mysore</a>
-        <a href="attractions.html" onclick="changeBackground('./images/attractions.jpg')">Attractions</a>
+        <a href="attractions.html" onclick="changeBackground('./images/philomena church(pexels).jpg')">Attractions</a>
         <a href="gallery.html" onclick="changeBackground('./images/gallery.jpg')">Gallery</a>
-        <a href="contact.html" onclick="changeBackground('./images/contact.jpg')">Contact</a>
+        <a href="contact.html" onclick="changeBackground('./images/Rocktemple.jpg')">Contact</a>
     </nav>
     <div class="content">
-        <div class="gallery-section">
+        <div class="gallery-section" data-aos="fade-up">
             <h2>Mysore Palace</h2>
             <p>The iconic Mysore Palace, illuminated and in daylight, showcasing its architectural grandeur.</p>
             <div class="carousel card">
@@ -29,7 +31,7 @@
             <a href="https://en.wikipedia.org/wiki/Mysore_Palace" target="_blank" class="know-more-link">Know More</a>
         </div>
 
-        <div class="gallery-section">
+        <div class="gallery-section" data-aos="fade-up" data-aos-delay="200">
             <h2>Jaganmohan Palace</h2>
             <p>The beautiful Jaganmohan Palace, now an art gallery, showcasing its unique architectural style.</p>
             <div class="carousel card">
@@ -40,23 +42,23 @@
             <a href="https://en.wikipedia.org/wiki/Jaganmohan_Palace" target="_blank" class="know-more-link">Know More</a>
         </div>
 
-        <div class="gallery-section">
+        <div class="gallery-section" data-aos="fade-up" data-aos-delay="400">
             <h2>Krishna Raja Sagara (KRS)</h2>
             <p>The majestic Krishna Raja Sagara dam and its beautiful Brindavan Gardens.</p>
             <div class="carousel card">
                 <button class="carousel-btn left" onclick="changeImage('krs', -1)">❮</button>
-                <img id="krs-image" src="./images/krs1.jpg" alt="Krishna Raja Sagara (KRS)">
+                <img id="krs-image" src="https://imgs.search.brave.com/CE05G6fZaCDT_ikfMOJmN93BxWAXadJguc68G2KoHCg/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9mYXN0/bHkuNHNxaS5uZXQv/aW1nL2dlbmVyYWwv/NjAweDYwMC8xNTMy/OTA0Nl9JV1ZOd1dX/ZUo3WlJLMm1kanpH/eUJBOS1LMTkyalYw/OURQaGZFT3k4NDNz/LmpwZw" alt="Krishna Raja Sagara (KRS)">
                 <button class="carousel-btn right" onclick="changeImage('krs', 1)">❯</button>
             </div>
             <a href="https://en.wikipedia.org/wiki/Krishna_Raja_Sagara" target="_blank" class="know-more-link">Know More</a>
         </div>
 
-        <div class="gallery-section">
+        <div class="gallery-section" data-aos="fade-up" data-aos-delay="600">
             <h2>Shivanasamudra Falls</h2>
             <p>The breathtaking Shivanasamudra Falls, one of the oldest hydroelectric power stations in Asia.</p>
             <div class="carousel card">
                 <button class="carousel-btn left" onclick="changeImage('shivanasamudra', -1)">❮</button>
-                <img id="shivanasamudra-image" src="./images/ss1.jpg" alt="Shivanasamudra Falls">
+                <img id="shivanasamudra-image" src="./images/shiva1.jpg" alt="Shivanasamudra Falls">
                 <button class="carousel-btn right" onclick="changeImage('shivanasamudra', 1)">❯</button>
             </div>
             <a href="https://en.wikipedia.org/wiki/Shivanasamudra_Falls" target="_blank" class="know-more-link">Know More</a>
@@ -65,5 +67,11 @@
     <footer>
         <p>&copy; 2024 Mysore Tourism. All rights reserved.</p>
     </footer>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
 </body>
 </html>
